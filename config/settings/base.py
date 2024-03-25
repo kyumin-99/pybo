@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-87$14rc&8xn9mh+^!l2r*&d*l7+m=3w@vat1$xe039lxf^^nmv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.125.105.2'] # 고정 ip
+ALLOWED_HOSTS =['13.125.105.2']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'], # 템플릿 디렉터리
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,5 +127,4 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# 로그인 성공후 이동하는 URL
 LOGIN_REDIRECT_URL = '/'
