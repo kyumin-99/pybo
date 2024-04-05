@@ -19,6 +19,7 @@ def signup(request):
         form = UserForm()
     return render(request,'common/signup.html',{'form': form})
 
+# page_not_found 함수는 추후에 구현해도 됨
 def page_not_found(request, exception):
     return render(request, 'common/404.html', {})
 
